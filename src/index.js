@@ -14,14 +14,13 @@ const jr = {
   afterSpec(spec) {
     const _spec = {};
     _spec.id = spec.id;
-    _spec.info = spec.info;
     _spec.request = JSON.parse(JSON.stringify(spec.request));
     _spec.response = {};
     if (spec.response) {
       _spec.response = JSON.parse(JSON.stringify(spec.response));
     }
     _spec.recorded = spec.recorded;
-    if (spec.info.status === 'PASSED') {
+    if (spec.status === 'PASSED') {
       _spec.request.headers = undefined;
       _spec.request.body = undefined;
       _spec.response.headers = undefined;
