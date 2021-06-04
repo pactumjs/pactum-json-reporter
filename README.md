@@ -13,8 +13,7 @@ npm install --save-dev pactum-json-reporter
 
 ```javascript
 const pjr = require('pactum-json-reporter');
-const pactum = require('pactum');
-const reporter = pactum.reporter;
+const { reporter } = require('pactum');
 
 // global before block
 before(() => {
@@ -33,7 +32,7 @@ after(() => {
 const pjr = require('pactum-json-reporter');
 
 // name of the report file - defaults to "report.json"
-pjr.name = 'report-name.json';
+pjr.file = 'report-name.json';
 
 // folder path for the report file - defaults to "./reports"
 pjr.path = './reports-path';

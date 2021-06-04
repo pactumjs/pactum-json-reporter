@@ -1,6 +1,6 @@
 {
   "name": "pactum-json-reporter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JSON reporter for pactum tests",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -16,6 +16,7 @@
   },
   "keywords": [
     "pactum",
+    "pactumjs",
     "json",
     "reporter"
   ],
@@ -27,6 +28,6 @@
   "homepage": "https://github.com/ASaiAnudeep/pactum-json-reporter#readme",
   "devDependencies": {
     "mocha": "^8.4.0",
-    "pactum": "^3.0.14"
+    "pactum": "^3.0.15"
   }
 }
